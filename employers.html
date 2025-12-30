@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Employers | SMART HR Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-animated"></div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Navigation (same as main page) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html" style="text-decoration:none; background: linear-gradient(135deg, #2563eb, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">SMART HR SOLUTIONS</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#industries">Industries</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="employers.html" class="btn btn-primary">For Employers</a>
+                <a href="candidates.html" class="btn btn-outline">For Candidates</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#home" class="mobile-link">Home</a></li>
+            <li><a href="index.html#about" class="mobile-link">About</a></li>
+            <li><a href="index.html#services" class="mobile-link">Services</a></li>
+            <li><a href="index.html#industries" class="mobile-link">Industries</a></li>
+            <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="employers.html" class="btn btn-primary">For Employers</a>
+            <a href="candidates.html" class="btn btn-outline">For Candidates</a>
+        </div>
+    </div>
+
+    <!-- Employers Section -->
+    <section id="employers" style="padding-top: 8rem; background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(139, 92, 246, 0.03));">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+            <div class="section-header">
+                <h2 class="section-title">For Employers</h2>
+                <p class="section-subtitle">Partner with us to build your dream team</p>
+            </div>
+            <!-- Show success or failure message after form submission-->
+             <div class="message-container">
+                <div id="successMessage" class="success-message" style="display: none;">
+                    ✓ Thank you! Your requirement has been submitted successfully. Our team will contact you shortly.
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    ✗ Oops! Something went wrong. Please try submitting the form again.
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto; padding-bottom: 5rem;">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3>Get a Quote</h3>
+                        <p>Tell us about your hiring needs and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form id="employerForm" class="modern-form">
+                        <div class="form-section">
+                            <h4 class="form-section-title">Company Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="companyName">Company Name *</label>
+                                    <input type="text" id="companyName" name="companyName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="industry">Industry *</label>
+                                    <select id="industry" name="industry" required>
+                                        <option value="">Select Industry</option>
+                                        <option value="it">IT & Technology</option>
+                                        <option value="pharma">Pharmaceuticals & Healthcare</option>
+                                        <option value="fmcg">FMCG & Retail</option>
+                                        <option value="manufacturing">Manufacturing</option>
+                                        <option value="logistics">Logistics & Supply Chain</option>
+                                        <option value="bfsi">BFSI & Corporate Services</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4 class="form-section-title">Contact Details</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Contact Person Name *</label>
+                                    <input type="text" id="contactName" name="contactName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="designation">Designation *</label>
+                                    <input type="text" id="designation" name="designation" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Mobile Number *</label>
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                                    <small>10 digit mobile number</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4 class="form-section-title">Hiring Requirements</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="positions">Number of Positions *</label>
+                                    <input type="number" id="positions" name="positions" min="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgency">Urgency Level *</label>
+                                    <select id="urgency" name="urgency" required>
+                                        <option value="">Select Urgency</option>
+                                        <option value="immediate">Immediate (Within 1 week)</option>
+                                        <option value="urgent">Urgent (1-2 weeks)</option>
+                                        <option value="normal">Normal (2-4 weeks)</option>
+                                        <option value="flexible">Flexible (1+ month)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="requirement">Detailed Requirement *</label>
+                                <textarea id="requirement" name="requirement" rows="5" placeholder="Please describe the role, required skills, experience level, and any specific requirements..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to be contacted by SMART HR Solutions regarding this requirement *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Submit Requirement</button>
+
+                        <div class="success-message" id="successMessage">
+                            ✓ Thank you! Your requirement has been submitted successfully. Our team will contact you within 24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-item">
+            <span>📞</span>
+            <span>+91 99999 88888</span>
+        </div>
+        <div class="contact-item">
+            <span>📧</span>
+            <span>connect.smarthrsolutions@gmail.com</span>
+        </div>
+        <div class="contact-item">
+            <span>🌐</span>
+            <span>www.smarthrsolutions.co.in</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SMART HR Solutions</h3>
+                <p style="color: rgba(255,255,255,0.7);">Connecting the right talent with the right opportunity. Your trusted partner in workforce excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Permanent Staffing</a></li>
+                    <li><a href="index.html#services">Contract Staffing</a></li>
+                    <li><a href="index.html#services">Executive Search</a></li>
+                    <li><a href="index.html#services">HR Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li>📞 +91 99999 88888</li>
+                    <li>📧 connect.smarthrsolutions@gmail.com</li>
+                    <li>🌐 www.smarthrsolutions.co.in</li>
+                    <li>⛳ T8/604 Runwal Garden My City, Phase 2, Dombivli East, Thane-421204.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> SMART HR Solutions | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="js/email.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
