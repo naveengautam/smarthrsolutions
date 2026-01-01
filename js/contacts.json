@@ -1,0 +1,19 @@
+{
+    "contacts": [
+        {
+            "icon": "📞",
+            "text": "+919324605372",
+            "type": "phone"
+        },
+        {
+            "icon": "📧",
+            "text": "connect.smarthrsolutions@gmail.com",
+            "type": "email"
+        },
+        {
+            "icon": "🌐",
+            "text": "www.smarthrsolutions.co.in",
+            "type": "website"
+        }
+    ]   
+}

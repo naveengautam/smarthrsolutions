@@ -1,0 +1,67 @@
+{
+    "footerSections": [
+        {
+            "title": "Quick Links",
+            "links": [
+                {
+                    "text": "Home",
+                    "href": "#home"
+                },
+                {
+                    "text": "About Us",
+                    "href": "#about"
+                },
+                {
+                    "text": "Services",
+                    "href": "#services"
+                },
+                {
+                    "text": "Industries",
+                    "href": "#industries"
+                }
+            ]
+        },
+        {
+            "title": "Services",
+            "links": [
+                {
+                    "text": "Permanent Staffing",
+                    "href": "#services"
+                },
+                {
+                    "text": "Contract Staffing",
+                    "href": "#services"
+                },
+                {
+                    "text": "Executive Search",
+                    "href": "#services"
+                },
+                {
+                    "text": "HR Consulting",
+                    "href": "#services"
+                }
+            ]
+        },
+        {
+            "title": "Contact",
+            "links": [
+                {
+                    "text": "📞 +919324605372",
+                    "href": null
+                },
+                {
+                    "text": "📧 connect.smarthrsolutions@gmail.com",
+                    "href": null
+                },
+                {
+                    "text": "🌐 www.smarthrsolutions.co.in",
+                    "href": null
+                },
+                {
+                    "text": "⛳ T8/604 Runwal Garden My City,Phase 2, Dombivli East, Thane-421204.",
+                    "href": null
+                }
+            ]
+        }
+    ]
+}
