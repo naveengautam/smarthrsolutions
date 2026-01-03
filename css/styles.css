@@ -576,6 +576,109 @@ html {
     scroll-behavior: smooth;
 }
 
+/* for logo*/
+
+ /* Logo Style 2 - Elegant Gradient Text with Underline */
+.logo-style-2 {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 0;
+}
+
+.logo-style-2 .text {
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #2563eb, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.logo-style-2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #8b5cf6);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.logo-style-2:hover::after {
+    transform: scaleX(1);
+}
+
+/* Logo Style 5 - Tech/Modern with Animation */
+.logo-style-5 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid #f1f5f9;
+}
+
+.logo-style-5:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: #8b5cf6;
+}
+
+.logo-style-5 .icon-tech {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-style-5 .icon-tech::before {
+    content: 'S';
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 1;
+    position: relative;
+}
+
+.logo-style-5 .icon-tech::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-100%);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    to { transform: translateX(100%); }
+}
+
+.logo-style-5 .text {
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.5px;
+}
+
+
 /* Mobile Responsive */
 @media (max-width: 968px) {
     .nav-links,
