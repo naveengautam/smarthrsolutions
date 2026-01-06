@@ -578,6 +578,10 @@ html {
 
 /* for logo*/
 
+.logo-showcase img {
+    width: 250px;
+    height: auto;
+}
  /* Logo Style 2 - Elegant Gradient Text with Underline */
 .logo-style-2 {
     display: inline-block;
@@ -597,7 +601,7 @@ html {
     position: relative;
 }
 
-.logo-style-2::after {
+/* .logo-style-2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -612,7 +616,7 @@ html {
 
 .logo-style-2:hover::after {
     transform: scaleX(1);
-}
+} */
 
 /* Logo Style 5 - Tech/Modern with Animation */
 .logo-style-5 {

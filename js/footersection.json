@@ -5,19 +5,19 @@
             "links": [
                 {
                     "text": "Home",
-                    "href": "#home"
+                    "href": "index.html#home"
                 },
                 {
                     "text": "About Us",
-                    "href": "#about"
+                    "href": "index.html#about"
                 },
                 {
                     "text": "Services",
-                    "href": "#services"
+                    "href": "index.html#services"
                 },
                 {
                     "text": "Industries",
-                    "href": "#industries"
+                    "href": "index.html#industries"
                 }
             ]
         },
@@ -26,19 +26,19 @@
             "links": [
                 {
                     "text": "Permanent Staffing",
-                    "href": "#services"
+                    "href": "index.html#services"
                 },
                 {
                     "text": "Contract Staffing",
-                    "href": "#services"
+                    "href": "index.html#services"
                 },
                 {
                     "text": "Executive Search",
-                    "href": "#services"
+                    "href": "index.html#services"
                 },
                 {
                     "text": "HR Consulting",
-                    "href": "#services"
+                    "href": "index.html#services"
                 }
             ]
         },
