@@ -429,6 +429,6 @@ html {
 /* for desktop */
 @media (min-width: 1024px) {
     .hero {
-        padding: 6rem 6rem 2rem;
+        padding: 9rem 6rem 2rem;
     }
 }
