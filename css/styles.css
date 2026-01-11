@@ -544,7 +544,8 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: var(--accent);
+    /*color: var(--accent);*/
+    color: #129832;
 }
 
 .footer-links {
