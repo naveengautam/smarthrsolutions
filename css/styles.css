@@ -544,7 +544,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    /*color: var(--accent);*/
+    /*color: var(--accent);* did not take chages on prod */
     color: #129832;
 }
 
